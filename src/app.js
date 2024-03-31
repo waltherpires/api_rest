@@ -3,17 +3,17 @@ import { resolve } from 'path';
 
 dotenv.config();
 
-import './src/database';
+import './database';
 
 import cors from 'cors';
 import helmet from 'helmet';
 
 import express from 'express';
-import homeRoutes from './src/routes/homeRoutes';
-import fotoRoutes from './src/routes/fotoRoutes';
-import userRoutes from './src/routes/userRoutes';
-import tokenRoutes from './src/routes/tokenRoutes';
-import alunoRoutes from './src/routes/alunoRoutes';
+import homeRoutes from './routes/homeRoutes';
+import fotoRoutes from './routes/fotoRoutes';
+import userRoutes from './routes/userRoutes';
+import tokenRoutes from './routes/tokenRoutes';
+import alunoRoutes from './routes/alunoRoutes';
 
 const whiteList = [
   'https://localhost:3000',
